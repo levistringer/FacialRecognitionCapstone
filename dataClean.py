@@ -9,13 +9,13 @@ MAX_PEOPLE = 50
 
 count = 1
 flag = True
-
-for filename in os.listdir(imageDIR):
+for filename in sorted(os.listdir(imageDIR)): #This needed to be sorted on a mac
     if count > MAX_PEOPLE:
         break
     personTags = filename.split('.')
     if len(personTags) == 3:
         personTag = int(personTags[1])
+        #if personTag in [1,2,3,4,5]:
         if personTag in [1,10,11,12,13]:
             flag = True
             path = os.path.join(imageDIR,filename)

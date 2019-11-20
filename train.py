@@ -9,7 +9,6 @@ imlist = []
 TRAIN_DIR = 'eigenFaceData_train'
 for filename
 
-
 im = array(Image.open(imlist[0])) # open one image to get size
 m,n = im.shape[0:2] # get the size of the images
 imnbr = len(imlist) # get the number of images
