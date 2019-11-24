@@ -2,3 +2,6 @@
 eigenFaceData_test
 eigenFaceData_train
 faces-data-new
+faces.txt
+model.txt
+__pycache__
