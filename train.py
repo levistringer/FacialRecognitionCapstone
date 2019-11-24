@@ -2,6 +2,8 @@ from PIL import Image
 from scipy.linalg import solve
 from numpy import *
 from pylab import *
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
 import pca
 import os
 import math
