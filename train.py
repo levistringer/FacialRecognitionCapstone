@@ -28,8 +28,9 @@ m,n = im.shape[0:2] # get the size of the images
 imnbr = len(imlist) # get the number of images
 
 # create matrix to store all flattened images
-immatrix = array([array(Image.open(im)).flatten()
-              for im in imlist],'f')
+immatrix = array([array(Image.open(im)).flatten() 
+                            for im in imlist],'f')
+
 
 # perform PCA
 V,S,immean = pca.pca(immatrix)
