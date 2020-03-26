@@ -5,12 +5,18 @@ imageDIR = 'faces-data-new/images'
 newDIR = 'eigenFaceData_train'
 newerDIR = 'eigenFaceData_test'
 
-MAX_PEOPLE = 50
+MAX_PEOPLE = 150
 
 count = 1
 flag = True
 
-for filename in os.listdir(imageDIR):
+files = os.listdir(imageDIR)
+files.sort()
+for filename in files:
+    #print(os.listdir(imageDIR))
+   
+    #print(os.listdir(imageDIR))
+    #print(filename)
     if count > MAX_PEOPLE:
         break
     personTags = filename.split('.')
@@ -34,4 +40,3 @@ for filename in os.listdir(imageDIR):
             if flag == True:
                 flag = False
                 count = count + 1
-
