@@ -5,3 +5,4 @@ faces-data-new
 faces.txt
 model.txt
 __pycache__
+.DS_Store
